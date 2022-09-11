@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.container{
+  color: red;
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.test{
+  background-color: cornflowerblue;
+  color: darkgreen;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
