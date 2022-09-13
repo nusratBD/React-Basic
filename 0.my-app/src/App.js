@@ -13,7 +13,14 @@ const testStyle = {
 function App() {
   const names = ['Nusrat', 'Hurain', 'Nuha', 'Tithi', 'Dipti', 'Sweety', 'Koly'];
   const salaries = [2000000, 3000000, 5000000, 4000000, 7000000];
-  const profession = ['Software Engineer', 'Electrical Engineer', 'AI expert', 'Web Developer']
+  const profession = ['Software Engineer', 'Electrical Engineer', 'AI expert', 'Web Developer'];
+  const agenda = [
+    {name: 'Quran Recitation', description: 'Bakara, Yasin, Mulk, Oyakia'},
+    {name: 'Friday Quran Recitation', description: 'Bakara, Yasin, Mulk, Oyakia, Kahaf'},
+    {name: 'Istegfar', description: 'Do as much as possible'},
+    {name: 'Active Help', description: 'Directly help at least one person'},
+    {name: 'Passive Help', description: 'Post at least one article for the purpose of dawah'}
+  ]
   return (
     <div className="App">
       {/* Similar in Look, Similar in Data : without props*/}
@@ -28,6 +35,12 @@ function App() {
       {/* Dynamic Components: array */}
       {
         names.map(name=><Name name={name}></Name>)
+      }
+      
+      {/* Dynamic Components: array of object */}
+      <h1>Regular Agenda of Every Muslim</h1>
+      {
+        agenda.map(agendum=><Object name={agendum.name} description={agendum.description}></Object>)
       }
     </div>
   );
@@ -69,6 +82,16 @@ function Name(props){
       </div></>
      
     );
+}
+
+function Object(props){
+  return(
+    
+    <div className="agenda">
+      <div className="agendum">{props.name}</div>
+      <div className="agendum">{props.description}</div>
+    </div>
+  )
 }
 
 export default App;

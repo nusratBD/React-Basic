@@ -1,0 +1,3 @@
+/* 
+We can create multiple components dynamically only by using map
+*/
