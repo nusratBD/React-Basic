@@ -1,0 +1,4 @@
+/* 
+props comes from properties.
+props makes components similar in look different in data.
+*/
