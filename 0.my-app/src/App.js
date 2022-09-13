@@ -11,12 +11,19 @@ const testStyle = {
     fontWeight: 200
 }
 function App() {
+  const names = ['Nusrat', 'Hurain', 'Nuha', 'Tithi', 'Dipti', 'Sweety', 'Koly'];
+  const salaries = [2000000, 3000000, 5000000, 4000000, 7000000];
+  const profession = ['Software Engineer', 'Electrical Engineer', 'AI expert', 'Web Developer']
   return (
     <div className="App">
       {/* Similar in Look, Similar in Data : without props*/}
       {/* Similar in look different with data: with props  */}
       <Person name="Nusrat Hurain" profession="Software Engineer"></Person>
       <Person name="Nusrat Hurain Nuha" profession="Web Developer"></Person>
+
+      {/* Component props from array */}
+      <Name name={names[0]} profession={profession[1]} salary={salaries[2]}></Name>
+      <Name name={names[3]}></Name>
     </div>
   );
 }
@@ -37,6 +44,26 @@ function Person(props){
       <p>Profession: {props.profession}</p>
   </div>
   )
+}
+
+//
+function Name(props){
+    return (
+      <>
+      <h1>Bio Data - {props.name}</h1>
+       <div className="names">
+        <div className="name">
+        <h1>Name: '{props.name}'</h1>
+      </div>
+      <div className="name">
+        <h1>Profession: {props.profession}</h1>
+      </div>
+      <div className="name">
+        <h1>Salary {props.salary}</h1>
+      </div>
+      </div></>
+     
+    );
 }
 
 export default App;
