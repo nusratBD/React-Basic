@@ -29,7 +29,7 @@ function App() {
       <Person name="Nusrat Hurain Nuha" profession="Web Developer"></Person>
 
       {/* Component props from array */}
-      <Name name={names[0]} profession={profession[1]} salary={salaries[2]}></Name>
+      <Name name={names[0]} profession={profession[1]} salary={salaries[2]} ></Name>
       <Name name={names[3]} profession={profession[2]} salary={salaries[1]}></Name>
 
       {/* Dynamic Components: array */}
@@ -45,7 +45,7 @@ function App() {
     </div>
   );
 }
-//Function is nothing but a component
+//Function is nothing but a component<=>Component is nothing but a function
 function Person(props){
   // console.log(props);//output: {}=>Empty Object
   console.log(props);//output: {name: 'Nusrat Hurain'}
