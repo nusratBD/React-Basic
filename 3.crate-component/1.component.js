@@ -1,7 +1,7 @@
 /* 
-We can return only one element in in JS function. If we want to return multiple this, we
-follow the below methods:
-1.Keep everything in a div. 
+We can return only one element in in JS function. If we want to return multiple things, we
+can follow the below methods:
+1.Keep everything in a div or empty tag(<></>)
 */
 
 /* 
