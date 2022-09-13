@@ -23,7 +23,12 @@ function App() {
 
       {/* Component props from array */}
       <Name name={names[0]} profession={profession[1]} salary={salaries[2]}></Name>
-      <Name name={names[3]}></Name>
+      <Name name={names[3]} profession={profession[2]} salary={salaries[1]}></Name>
+
+      {/* Dynamic Components: array */}
+      {
+        names.map(name=><Name name={name}></Name>)
+      }
     </div>
   );
 }
@@ -59,7 +64,7 @@ function Name(props){
         <h1>Profession: {props.profession}</h1>
       </div>
       <div className="name">
-        <h1>Salary {props.salary}</h1>
+        <h1>Salary: {props.salary}</h1>
       </div>
       </div></>
      
