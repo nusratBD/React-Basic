@@ -1,33 +1,20 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import ToDo from './components/ToDo/ToDo';
 function App() {
+  const [todos, setTodos] = useState([]);
+    useEffect(()=>{
+      fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(res=>res.json())
+      .then(data=>setTodos(data))
+    },[]);
   return (
     <div className="App">
-    <Battery name='Samsung Galaxy'></Battery>
-    <Battery name='iPhone7'></Battery>
-    <Battery name='OPPO'></Battery>
+      {
+      todos.map(todo=><ToDo todo={todo} key={todo.id}></ToDo>)
+      }
     </div>
   );
 }
-const battery = {
-  backgroundColor: 'skyblue',
-  margin: '10px',
-  padding: '10px',
-  border:'2px solid red',
-  borderRadius: '10px'
-}
-function Battery(props){
-  const [boost, setBoost] = useState(1);
-  const boostCharge = () =>{
-  const newBoost = boost*2;
-  setBoost(newBoost);
-  }
-  return(
-    <div style={battery}>
-      <h1>Phone Type: {props.name}</h1>
-      <h3>Charge Amount:{boost}</h3>
-      <button onClick={boostCharge}>Boost Charge</button>
-      </div>
-  )
-}
+
 export default App;
