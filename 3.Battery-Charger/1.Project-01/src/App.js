@@ -4,30 +4,34 @@ function App() {
   return (
     <div className="App">
     <Battery name='Samsung Galaxy'></Battery>
-    <Battery name='iPhone7'></Battery>
-    <Battery name='OPPO'></Battery>
+    <Battery name='iPhone 7'></Battery>
+    <Battery name='Oppo 9'></Battery>
     </div>
   );
 }
-const battery = {
-  backgroundColor: 'skyblue',
-  margin: '10px',
-  padding: '10px',
-  border:'2px solid red',
+const batteryStyle = {
+  backgroundColor: 'salmon',
+  padding:'10px',
+  margin:'20px',
+  border:'2px solid green',
   borderRadius: '10px'
+  
 }
 function Battery(props){
-  const [boost, setBoost] = useState(1);
-  const boostCharge = () =>{
-  const newBoost = boost*2;
-  setBoost(newBoost);
+  const [down, setDown] = useState(100);
+  const batteryDown = ()=>{
+    if(down>0){
+      const newDown = down - 10;
+      setDown(newDown);
+    }
   }
-  return(
-    <div style={battery}>
-      <h1>Phone Type: {props.name}</h1>
-      <h3>Charge Amount:{boost}</h3>
-      <button onClick={boostCharge}>Boost Charge</button>
-      </div>
+  return (
+    <div style={batteryStyle}>
+      <h1>Phone Name: {props.name}</h1>
+      <h3>Charge Amount: {down}</h3>
+      <button onClick={batteryDown}>Battery Down</button>
+    </div>
   )
 }
+
 export default App;
