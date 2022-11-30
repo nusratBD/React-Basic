@@ -1,0 +1,57 @@
+[
+    {
+      "id": "637f953ea7ec4761da4f955c",
+      "balance": "$2,465.36",
+      "age": 23,
+      "name": "Cain Higgins",
+      "gender": "male",
+      "company": "SIGNIDYNE",
+      "email": "cainhiggins@signidyne.com",
+      "phone": "+1 (822) 511-2835",
+      "address": "120 Dwight Street, Berlin, Guam, 931"
+    },
+    {
+      "id": "637f953eb557e607653d291a",
+      "balance": "$3,759.59",
+      "age": 29,
+      "name": "Erna Fletcher",
+      "gender": "female",
+      "company": "BOILCAT",
+      "email": "ernafletcher@boilcat.com",
+      "phone": "+1 (972) 449-2620",
+      "address": "125 Catherine Street, Brambleton, Utah, 926"
+    },
+    {
+      "id": "637f953ee2cadff934146dad",
+      "balance": "$2,524.63",
+      "age": 30,
+      "name": "Lucia Reyes",
+      "gender": "female",
+      "company": "SCENTRIC",
+      "email": "luciareyes@scentric.com",
+      "phone": "+1 (837) 498-2561",
+      "address": "592 Hill Street, Gilgo, Hawaii, 6833"
+    },
+    {
+      "id": "637f953ec34c0b7c571876b9",
+      "balance": "$3,925.10",
+      "age": 20,
+      "name": "Imelda Cotton",
+      "gender": "female",
+      "company": "COMBOGEN",
+      "email": "imeldacotton@combogen.com",
+      "phone": "+1 (852) 598-2176",
+      "address": "344 Miami Court, Fontanelle, Missouri, 3366"
+    },
+    {
+      "id": "637f953e5d773b42b4d70d30",
+      "balance": "$2,101.63",
+      "age": 21,
+      "name": "Decker Guzman",
+      "gender": "male",
+      "company": "IDEALIS",
+      "email": "deckerguzman@idealis.com",
+      "phone": "+1 (911) 507-2160",
+      "address": "544 Doughty Street, Sunwest, New Mexico, 4041"
+    }
+  ]

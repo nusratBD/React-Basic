@@ -1,4 +1,5 @@
 import React from 'react';
+import { addToCart } from '../../utilities/fakedb';
 import './User.css';
 const User = (props) => {
     const {name, age, phone, address, email, company, gender, balance, id} =props.user;
@@ -10,6 +11,9 @@ const User = (props) => {
     }
     const showCart2 = () =>{
         addCart2(id);
+    }
+    const local = (id) =>{
+        addToCart(id);
     }
     return (
         <div className='user'>
@@ -25,6 +29,7 @@ const User = (props) => {
             <button onClick={addCart}>Add To Cart: 1</button>
             <button onClick={showCart2}>Add To Cart: 2</button>
             <button onClick={() =>{addCart2(id)}}>Add To Cart: 3</button>
+            <button onClick={()=>{local(id)}}>Local Storage</button>
         </div>
     );
 };
