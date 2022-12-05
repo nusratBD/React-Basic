@@ -1,0 +1,23 @@
+.header{
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .header img{
+    margin: 20px;
+    height: 40px;
+  }
+  .list{
+    margin: 25px;
+    text-decoration: none;
+  }
+  .list a{
+    margin: 20px;
+    font-weight: 600;
+  }
+  .list a:hover{
+    color: orange;
+  }
