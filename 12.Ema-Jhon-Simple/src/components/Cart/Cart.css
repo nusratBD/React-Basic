@@ -1,0 +1,13 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+.order-summary{
+    text-align: center;
+}
+.calculation{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
