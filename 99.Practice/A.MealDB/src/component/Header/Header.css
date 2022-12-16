@@ -1,0 +1,17 @@
+.header{
+    height: 100px;
+    background-color: rgb(221, 102, 236);
+    display: flex;
+    justify-content: center;
+}
+.header .link{
+    padding: 20px;
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+.header .link:hover{
+    color: orange;
+}

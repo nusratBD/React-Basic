@@ -1,0 +1,30 @@
+
+.food{
+    height: 500px;
+    border: 2px solid plum;
+    border-radius: 20px;
+    position: relative;
+ }
+.food img{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+.food-btn{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  background-color: rgb(221, 102, 236);
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  /* margin-left: 80px; */
+  width: 82%;
+}
+.food-btn{
+  cursor: pointer;
+}
